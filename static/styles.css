@@ -1,0 +1,16 @@
+body {
+  background-color: black;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  color: #39ff14;
+  font-family: "Lucida Console", "Lucida Sans Typewriter", "monaco", "Bitstream Vera Sans Mono";
+}
+
+a {
+  color: #fcfc19;
+}
+
+.content {
+  padding: 1em;
+}
