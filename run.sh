@@ -1,1 +1,1 @@
-sbcl --load /home/protected/startup.lisp --no-sysinit
+sbcl --load /home/protected/LODP-Lisp-Site/startup.lisp --no-sysinit
