@@ -1,5 +1,5 @@
-(defpackage :lodp-lisp-site
-  (:use :cl :hunchentoot :spinneret)
+(defpackage lodp-lisp-site
+  (:use :cl :hunchentoot :spinneret :lodp-lisp-site.pages)
   (:export :serve))
 
 (in-package :lodp-lisp-site)

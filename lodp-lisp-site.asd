@@ -1,4 +1,4 @@
 (asdf:defsystem :lodp-lisp-site
-  :depends-on (:cl :hunchentoot :spinneret)
+  :depends-on (:cl-ppcre :hunchentoot :spinneret)
   :components ((:file "server")
-               (:module "pages" :components ((:file "home.lisp")))))
+               (:module "pages" :components ((:file "home")))))
