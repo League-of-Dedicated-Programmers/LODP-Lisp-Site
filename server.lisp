@@ -4,7 +4,8 @@
 
 (in-package :lodp-lisp-site)
 
+(hunchentoot:define-easy-handler (root-route :uri "/") () (lodp-lisp-site.pages:home))
+(defvar *server* (make-instance 'hunchentoot:easy-acceptor :port 8000 :document-root #p"./static/"))
+
 (defun serve ()
-  (hunchentoot:define-easy-handler (root-route :uri "/") () (lodp-lisp-site.pages:home))
-  (defvar *acceptor* (make-instance 'hunchentoot:easy-acceptor :port 8000 :document-root "./static/"))
-  (hunchentoot:start *acceptor*))
+  (hunchentoot:start *server*))
