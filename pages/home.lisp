@@ -1,3 +1,3 @@
 (in-package :lodp-lisp-site.pages)
 
-(defun home () "asdf")
+(defun home () (render-page (:title "Home") (:h1 "asdf")))
